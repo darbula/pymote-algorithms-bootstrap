@@ -1,3 +1,25 @@
 Pymote algorithms bootstrap
 ===========================
 This repo should be used as a template to quickly start a new project that provides Pymote algorithms.
+
+
+
+Usage
+-----
+
+1. Download [zip](https://github.com/darbula/pymote-algorithms-bootstrap/archive/master.zip) or [tarball](https://github.com/darbula/pymote-algorithms-bootstrap/tarball/master) of this repo master branch and extract into folder `pymote-algorithms-<package>` - replace `<package>` part with some custom name.
+2. Organize your algorithms in modules and subpackages under `pymote/algorithms` directory.
+3. Add `pymote-algorithms-<package>` directory to `PYTHONPATH` environment variable so that algorithms are importable using for example `from pymote.algorithms.example import Example`.
+
+When implementing algorithms from (or for) some scientific publications the proper way to name the subpackage or module should be `<author_last_name><year>` i.e. for *DV based positioning in ad hoc networks*, by Dragoş Niculescu and Badri Nath name should be `niculescu2003`.
+
+
+Source distribution
+-------------------
+
+If you want to distribute your pymote algorithms on [PyPI](https://pypi.python.org/pypi) please follow these steps:
+
+1. Edit `setup.py` and enter relevant data
+2. `python setup.py sdist upload register`
+
+For details visit documentation [here](http://docs.python.org/2/distutils/index.html#distutils-index).

@@ -7,7 +7,7 @@ This repo should be used as a template to quickly start a new project that provi
 Usage
 -----
 
-1. Download [zip](https://github.com/darbula/pymote-algorithms-bootstrap/archive/master.zip) or [tarball](https://github.com/darbula/pymote-algorithms-bootstrap/tarball/master) of this repo master branch and extract into folder `pymote-algorithms-<package>` - replace `<package>` part with some custom name.
+1. Fork or download this repo and rename root folder from `pymote-algorithms-bootstrap` to `pymote-algorithms-<package>` - replace `<package>` part with some custom name.
 2. Organize your algorithms in modules and subpackages under `pymote/algorithms` directory.
 3. To make the package importable the proper way is to edit provided `setup.py` script and install it. Alternative is to write `<package>.pth` file containing path to package inside appropriate, i.e. virtual environment or systemwide, `site-packages` directory. One more alternative is to write the path to package into `PYTHONPATH` environment variable.
 
